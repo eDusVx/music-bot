@@ -19,6 +19,6 @@
         "ms": "^3.0.0-canary.1",
         "opusscript": "^0.0.8",
         "play-dl": "^1.9.6",
-        "ytdl-core": "^4.9.1"
+        "ytdl-core": "^4.11.5"
     }
 }

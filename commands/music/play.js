@@ -51,7 +51,7 @@ module.exports = {
         }
 
             const playEmbed = new EmbedBuilder()
-                .setAuthor({ name: `Adicionando sua ${res.playlist ? 'playlist' : `musica :${res.music}`} na fila ... ✅`})
+                .setAuthor({ name: `Adicionando a ${res.playlist ? `playlist : ${res.playlist.title}` : `musica ${res.tracks[0].description}`} na fila ✅`})
                 .setColor('#2f3136')
                 
             await inter.editReply({ embeds: [playEmbed] });

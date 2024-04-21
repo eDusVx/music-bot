@@ -1,12 +1,11 @@
 module.exports = {
     app: {
-        token: 'MTE2NDcyMTQ1MzE1MzkxMDc4NA.G0x5m7.6KISKvrxICt9S0I2b5BcUFKnfWODkmpEN_krJI',
+        token: 'MTIzMTQzODkwNzc0OTQzNzUzMA.GdFRVd.-kvR-IFWa1A3XyS7hbgCxF3s_NREbGulzRSvOU',
         playing: 'Enzo 👍',
         global: true,
         guild: false,
         ExtraMessages: false,
         loopMessage: false,
-
     },
 
     opt: {
