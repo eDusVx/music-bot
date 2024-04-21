@@ -19,9 +19,9 @@ module.exports = {
         spotifyBridge: true,
         volume: 75,
         leaveOnEmpty: true,
-        leaveOnEmptyCooldown: 30000,
+        leaveOnEmptyCooldown: 300000,
         leaveOnEnd: true,
-        leaveOnEndCooldown: 30000,
+        leaveOnEndCooldown: 300000,
         discordPlayer: {
             ytdlOptions: {
                 quality: 'highestaudio',
