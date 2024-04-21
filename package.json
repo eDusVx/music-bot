@@ -20,5 +20,8 @@
         "opusscript": "^0.0.8",
         "play-dl": "^1.9.6",
         "ytdl-core": "^4.11.5"
+    },
+    "devDependencies": {
+        "@flydotio/dockerfile": "^0.5.5"
     }
 }
