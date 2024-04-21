@@ -1,8 +1,8 @@
 const { EmbedBuilder } = require('discord.js');
 module.exports = async ({ client, inter, queue }) => { 
-    if (!queue || !queue.isPlaying()) return inter.editReply({ content: `Nenhuma musica tocando ... tente novamente ? ❌`, ephemeral: true });
+    if (!queue || !queue.isPlaying()) return inter.editReply({ content: `Nenhuma musica tocando tente novamente`, ephemeral: true });
 
-    if (!queue.tracks.toArray()[0]) return  inter.editReply({ content: `Nenhuma musica na fila depois dessa ${inter.member}... tente novamente ? ❌`, ephemeral: true });
+    if (!queue.tracks.toArray()[0]) return  inter.editReply({ content: `Nenhuma musica na fila depois dessa tente novamente`, ephemeral: true });
 
         const methods = ['', '🔁', '🔂'];
 
