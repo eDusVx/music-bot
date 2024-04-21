@@ -19,4 +19,4 @@ primary_region = 'gru'
 [[vm]]
   memory = '200mb'
   cpu_kind = 'shared'
-  cpus = 0.5
+  cpus = 1
