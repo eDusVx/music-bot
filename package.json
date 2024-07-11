@@ -2,7 +2,7 @@
     "name": "music-bot",
     "main": "main.js",
     "author": "eDusVx",
-    "version": "8.0.0",
+    "version": "1.0.0",
     "scripts": {
         "start": "node main.js"
     },
