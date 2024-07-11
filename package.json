@@ -4,7 +4,7 @@
     "author": "eDusVx",
     "version": "1.0.0",
     "scripts": {
-        "start": "node main.js --host 0.0.0.0 --port 3000"
+        "start": "node main.js"
     },
     "dependencies": {
         "@discord-player/extractor": "^4.3.1",
