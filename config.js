@@ -1,5 +1,4 @@
 require('dotenv').config();
-console.log(${{ shared.TOKEN }})
 console.log(process.env)
 console.log(process.env.TOKEN)
 module.exports = {
