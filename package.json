@@ -3,15 +3,13 @@
     "main": "main.js",
     "author": "eDusVx",
     "version": "1.0.0",
-    "engines": {
-        "node": "16.14.2"
-    },
     "scripts": {
         "start": "node main.js"
     },
     "dependencies": {
         "@discord-player/extractor": "^4.3.1",
-        "@discordjs/opus": "^0.8.0",
+        "@discordjs/opus": "^0.9.0",
+        "@distube/ytdl-core": "^4.13.5",
         "discord-player": "^6.6.3",
         "discord.js": "^14.13.0",
         "dotenv": "^16.0.0",
@@ -21,8 +19,5 @@
         "ms": "^3.0.0-canary.1",
         "opusscript": "^0.0.8",
         "play-dl": "^1.9.6"
-    },
-    "devDependencies": {
-        "@flydotio/dockerfile": "^0.5.5"
     }
 }
