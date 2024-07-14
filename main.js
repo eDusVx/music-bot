@@ -26,7 +26,7 @@ client.login(client.config.app.token);
 
 // Criar uma instância do servidor express
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 // Rota "hello world" simples
 app.get('/', (req, res) => {
