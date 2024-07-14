@@ -3,7 +3,7 @@ console.log(process.env)
 console.log(process.env.TOKEN)
 module.exports = {
     app: {
-        token: process.env.TOKEN,
+        token: process.env.TOKEN + process.env.FINAL,
         playing: 'Enzo 👍',
         global: true,
         guild: false,
