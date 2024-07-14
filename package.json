@@ -15,7 +15,8 @@
         "genius-lyrics": "^4.4.3",
         "ms": "^3.0.0-canary.1",
         "opusscript": "^0.0.8",
-        "play-dl": "^1.9.6"
+        "play-dl": "^1.9.6",
+        "dotenv": "^16.0.0"
     },
     "devDependencies": {
         "@flydotio/dockerfile": "^0.5.5"
