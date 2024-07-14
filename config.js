@@ -4,7 +4,7 @@ console.log(process.env)
 console.log(process.env.TOKEN)
 module.exports = {
     app: {
-        token: ${{ shared.TOKEN }},
+        token: process.env.TOKEN,
         playing: 'Enzo 👍',
         global: true,
         guild: false,
