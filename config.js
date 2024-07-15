@@ -1,6 +1,5 @@
 require('dotenv').config();
-console.log(process.env)
-console.log(process.env.TOKEN)
+
 module.exports = {
     app: {
         token: process.env.TOKEN + process.env.FINAL,
