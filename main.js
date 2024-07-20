@@ -1,4 +1,3 @@
-const express = require('express');
 const { Player } = require('discord-player');
 const Genius = require("genius-lyrics");
 const { Client, GatewayIntentBits } = require('discord.js');
