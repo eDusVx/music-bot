@@ -23,17 +23,3 @@ player.extractors.loadDefault();
 require('./src/loader');
 
 client.login(client.config.app.token);
-
-// Criar uma instância do servidor express
-const app = express();
-const PORT = process.env.PORT;
-
-// Rota "hello world" simples
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
-});
-
-// Iniciar o servidor na porta especificada
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
