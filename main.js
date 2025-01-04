@@ -16,7 +16,6 @@ global.client = new Client({
 });
 
 client.config = require('./config');
-
 const player = new Player(client, client.config.opt.discordPlayer);
 global.genius = new Genius.Client();
 
@@ -24,17 +23,16 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
-  })
-  
+    res.send('Hello World!');
+});
+
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+    console.log(`API is running on http://localhost:${port}`);
+});
 
 (async () => {
     await player.extractors.loadMulti(DefaultExtractors);
 })();
 
 require('./src/loader');
-
 client.login(client.config.app.token);
