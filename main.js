@@ -2,6 +2,7 @@ const { Player } = require('discord-player');
 const Genius = require("genius-lyrics");
 const { Client, GatewayIntentBits } = require('discord.js');
 const { DefaultExtractors } = require('@discord-player/extractor');
+const { YoutubeiExtractor } = require('discord-player-youtubei');
 const express = require('express');
 
 global.client = new Client({
@@ -31,6 +32,7 @@ app.listen(port, () => {
 });
 
 (async () => {
+    player.extractors.register(YoutubeiExtractor, {});
     await player.extractors.loadMulti(DefaultExtractors);
 })();
 
