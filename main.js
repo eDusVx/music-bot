@@ -3,7 +3,6 @@ const Genius = require("genius-lyrics");
 const { Client, GatewayIntentBits } = require('discord.js');
 const { DefaultExtractors } = require('@discord-player/extractor');
 const { YoutubeiExtractor } = require('discord-player-youtubei');
-const express = require('express');
 
 global.client = new Client({
     intents: [
@@ -19,17 +18,6 @@ global.client = new Client({
 client.config = require('./config');
 const player = new Player(client, client.config.opt.discordPlayer);
 global.genius = new Genius.Client();
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
-
-app.listen(port, () => {
-    console.log(`API is running on http://localhost:${port}`);
-});
 
 (async () => {
     player.extractors.register(YoutubeiExtractor, {});
